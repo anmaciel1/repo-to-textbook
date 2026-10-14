@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+# books generated while developing (repo root only, so plugins/repo-to-textbook/ stays tracked)
+/*-textbook/

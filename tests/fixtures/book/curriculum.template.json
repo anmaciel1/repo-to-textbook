@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "book": {"title": "tinynet", "subtitle": "A Guided Textbook"},
+  "repo": {"name": "tinynet", "url": "https://github.com/example/tinynet", "web_url": "https://github.com/example/tinynet",
+           "host": "github", "ref": null, "sha": "__SHA__", "source_dir": "__SOURCE__",
+           "summary": "A dependency-free two-layer neural network that learns XOR, written to teach backpropagation."},
+  "edition": 1,
+  "paper": "letter",
+  "reader": {"level": "intermediate", "default_mode": "applied", "focus": ["backpropagation"], "assumed": []},
+  "nodes": [
+    {"id": "python-basics", "title": "Python lists and classes", "kind": "technology", "prereqs": [], "files": [], "core": false, "mode": "assumed"},
+    {"id": "architecture", "title": "tinynet architecture", "kind": "component", "prereqs": ["python-basics"], "files": ["tinynet/model.py", "tinynet/train.py"], "core": true, "mode": "applied"},
+    {"id": "forward-pass", "title": "Forward pass", "kind": "concept", "prereqs": ["architecture"], "files": ["tinynet/model.py:17-21"], "core": true, "mode": "applied"},
+    {"id": "chain-rule", "title": "Chain rule", "kind": "concept", "prereqs": [], "files": [], "core": false, "mode": "applied"},
+    {"id": "backprop", "title": "Backpropagation", "kind": "concept", "prereqs": ["forward-pass", "chain-rule"], "files": ["tinynet/model.py:23-31"], "core": true, "mode": "foundations+applied"}
+  ],
+  "chapters": [
+    {"id": "preface", "kind": "front", "title": "Preface", "nodes": [], "status": "approved"},
+    {"id": "ch01-big-picture", "kind": "chapter", "title": "The Big Picture", "summary": "What tinynet is and how a prediction flows through it.", "tag": "core", "difficulty": 1, "nodes": ["architecture", "forward-pass"], "status": "approved", "depth": "normal", "primers": [], "objectives": ["Trace one prediction"], "files": ["tinynet/model.py", "tinynet/train.py"]},
+    {"id": "ch02-backpropagation", "kind": "chapter", "title": "Backpropagation: How TinyNet Learns", "summary": "Backprop from first principles, then line by line in TinyNet.backward.", "tag": "core", "difficulty": 2, "nodes": ["backprop"], "status": "approved", "depth": "deep", "primers": ["chain-rule"], "objectives": ["Derive the gradients", "Map them to code"], "files": ["tinynet/model.py"]},
+    {"id": "glossary", "kind": "back", "title": "Glossary", "nodes": [], "status": "approved"}
+  ],
+  "suggestions": [{"title": "Bias terms", "why": "tinynet omits biases; a chapter could show what they would change."}],
+  "changelog": []
+}

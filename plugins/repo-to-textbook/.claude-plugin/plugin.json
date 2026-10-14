@@ -1,0 +1,9 @@
+{
+  "name": "repo-to-textbook",
+  "version": "0.2.0",
+  "description": "Turn any Git repository into a textbook: dependency-ordered chapters you approve first, optional fundamentals for topics like backpropagation, grounded in the repo's real code, exported as a classic HTML book and PDF that you can keep revising.",
+  "author": { "name": "Andre Maciel" },
+  "license": "MIT",
+  "repository": "https://github.com/anmaciel1/repo-to-textbook",
+  "keywords": ["learning", "documentation", "onboarding", "textbook", "pdf", "codebase"]
+}

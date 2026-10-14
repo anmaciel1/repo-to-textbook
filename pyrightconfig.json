@@ -1,0 +1,4 @@
+{
+  "extraPaths": ["plugins/repo-to-textbook/skills/book/scripts"],
+  "pythonVersion": "3.8"
+}

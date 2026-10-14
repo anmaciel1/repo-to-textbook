@@ -1,0 +1,17 @@
+{
+  "name": "repo-to-textbook",
+  "owner": { "name": "Andre Maciel" },
+  "metadata": {
+    "description": "Turn repositories into textbooks.",
+    "version": "0.2.0"
+  },
+  "plugins": [
+    {
+      "name": "repo-to-textbook",
+      "source": "./plugins/repo-to-textbook",
+      "description": "Turn any Git repository into a textbook you steer: dependency-ordered chapters, optional fundamentals, verified code citations, HTML + PDF output.",
+      "version": "0.2.0",
+      "category": "learning"
+    }
+  ]
+}
